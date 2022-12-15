@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: hsl(31, 77%, 52%);
+    --secondary-color: hsl(184, 100%, 22%);
+    --tertiary-color: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75);
+    --secondary-white: hsl(0, 0%, 95%);
+}
+body{
+    display: flex;
+    height: 100vh;
+    background-color: var(--secondary-white);
+}
+.container {
+    width: 62rem;
+    margin: auto;
+    align-items: center;
+}
+.wrapper{
+    width: 62rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.box{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--white);
+    line-height: 1.6rem;
+}
+.first{
+    background-color: var(--primary-color);
+}
+.second{
+    background-color: var(--secondary-color);
+}
+.third{
+    background-color: var(--tertiary-color);
+}
+
+.title{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.caption{
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+.button{
+    margin-top: 3rem;
+    height: 2.4rem;
+    width: 8rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    font-family: "Lexend Deca", sans-serif;
+    text-decoration: none;
+    margin-top: 3rem;
+    height: 2.4rem;
+    width: 8rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.satu{
+    color: var(--primary-color);
+}
+
+.dua{
+    color: var(--secondary-color);
+}
+
+.tiga{
+    color: var(--tertiary-color);
+}
+
+a:hover{
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid;
+}
